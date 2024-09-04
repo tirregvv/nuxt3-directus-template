@@ -1,0 +1,25 @@
+{
+  "name": "nuxt3-directus-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@directus/sdk": "^17.0.0",
+    "@nuxt/icon": "^1.5.1",
+    "crypto-js": "^4.2.0",
+    "nuxt": "^3.13.0",
+    "nuxt-directus": "^5.6.1",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.44",
+    "tailwindcss": "^3.4.10"
+  }
+}
