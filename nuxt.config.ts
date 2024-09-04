@@ -32,5 +32,15 @@ export default defineNuxtConfig({
 		url: process.env.DIRECTUS_URL ?? "http://localhost:8055",
         autoRefresh: true,
 	},
-    modules: ["@nuxt/icon", "nuxt-directus"],
+    modules: ["@nuxt/icon", "nuxt-directus", '@nuxtjs/color-mode'],
+    colorMode: {
+        preference: 'system', // default value of $colorMode.preference
+        fallback: 'dark', // fallback value if not system preference found
+        hid: 'nuxt-color-mode-script',
+        globalName: '__NUXT_COLOR_MODE__',
+        componentName: 'ColorScheme',
+        classPrefix: '',
+        classSuffix: '-mode',
+        storageKey: 'nuxt-color-mode'
+    },
 })

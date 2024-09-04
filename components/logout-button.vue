@@ -1,5 +1,5 @@
 <template>
-    <button @click="handleLogout" class="px-4 py-2 bg-cyan-500 text-slate-800">Logout</button>
+    <button @click="handleLogout" class="button">Logout</button>
 </template>
 
 <script setup>

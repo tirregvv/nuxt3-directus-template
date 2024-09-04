@@ -1,6 +1,7 @@
 <template>
-    <div class="h-dvh w-dvw overflow-y-auto no-scrollbar px-4 py-32 bg-slate-900">
+    <div class="h-dvh w-dvw overflow-y-auto no-scrollbar px-4 py-32 bg-cello-200 dark:bg-cello-950">
         <NuxtLayout name="default">
+            <DarkmodeToggle/>
             <NuxtPage />
         </NuxtLayout>
     </div>

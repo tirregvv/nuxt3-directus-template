@@ -3,7 +3,100 @@
 @tailwind utilities;
 
 @layer base {
-    .input {
-        @apply px-4 py-2 text-cyan-700 focus:text-cyan-500 bg-transparent ring-0 outline-none border border-cyan-500;
+    *[class*="dark:"] {
+        @apply transition-colors duration-300;
     }
+    .input {
+        @apply transition-colors duration-300 rounded-md px-4 py-2 text-cello-950 dark:text-cello-200 focus:text-cello-950 dark:focus:text-cello-200 border-cello-950 dark:border-cello-200 bg-transparent ring-0 outline-none border;
+    }
+
+    .hover-effect {
+        @apply cursor-pointer transition-colors duration-300 bg-cello-950 dark:bg-cello-200 text-cello-200 dark:text-cello-950 hover:bg-cello-600 dark:hover:bg-cello-300 hover:text-cello-100 dark:hover:text-cello-800;
+    }
+
+    .button {
+        @apply rounded-md px-4 py-2 hover-effect;
+    }
+
+    /* --------------------------- */
+    /* Start Font Styles */
+    /* --------------------------- */
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold text-cello-950 dark:text-cello-200;
+    }
+    p {
+        @apply text-cello-950 dark:text-cello-200;
+    }
+
+    .h1 {
+        @apply text-4xl;
+    }
+    .h2 {
+        @apply text-3xl;
+    }
+    .h3 {
+        @apply text-2xl;
+    }
+    .h4 {
+        @apply text-xl;
+    }
+    .h5 {
+        @apply text-lg;
+    }
+    .h6 {
+        @apply text-base;
+    }
+    .p {
+        @apply text-base;
+    }
+
+    /* LG */
+    @media (min-width: 1024px) {
+        .h1 {
+            @apply text-5xl;
+        }
+        .h2 {
+            @apply text-4xl;
+        }
+        .h3 {
+            @apply text-3xl;
+        }
+        .h4 {
+            @apply text-2xl;
+        }
+        .h5 {
+            @apply text-xl;
+        }
+        .h6 {
+            @apply text-lg;
+        }
+        .p {
+            @apply text-base;
+        }
+    }
+
+    h1 {
+        @apply h1;
+    }
+    h2 {
+        @apply h2;
+    }
+    h3 {
+        @apply h3;
+    }
+    h4 {
+        @apply h4;
+    }
+    h5 {
+        @apply h5;
+    }
+    h6 {
+        @apply h6;
+    }
+    p {
+        @apply p;
+    }
+    /* --------------------------- */
+    /* Start Font Styles */
+    /* --------------------------- */
 }
